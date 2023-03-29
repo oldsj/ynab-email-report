@@ -27,7 +27,7 @@ def send_email(
         password=password,
     )
     email.receivers = recipients
-    email.set_template_paths(html="templates")
+    email.set_template_paths(html="src/templates")
 
     # Send the email
     email.send(
