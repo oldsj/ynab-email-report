@@ -22,9 +22,11 @@ jobs:
             - name: Run report
               run: python src/main.py
               env:
+                MAIL_PORT: ${{ secrets.MAIL_PORT }}
                 MAIL_DEFAULT_SENDER: ${{ secrets.MAIL_DEFAULT_SENDER }}
                 MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+                MAIL_SUBJECT: ${{ secrets.MAIL_SUBJECT }}
                 MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
-                MAIL_PORT: ${{ secrets.MAIL_PORT }}
                 MAIL_RECIPIENTS: ${{ secrets.MAIL_RECIPIENTS }}
                 MAIL_SERVER: ${{ secrets.MAIL_SERVER }}
+                YNAB_API_KEY: ${{ secrets.YNAB_API_KEY }}
