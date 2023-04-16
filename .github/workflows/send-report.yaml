@@ -1,9 +1,9 @@
 name: Send Report
 
 on:
-    schedule:
-        # every day at 0700 ET
-        - cron: '0 11 * * *'
+    #schedule:
+    #    # every day at 0700 ET
+    #    - cron: '0 11 * * *'
     workflow_dispatch:
 
 jobs:
